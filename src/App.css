@@ -1,0 +1,145 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #062431;
+}
+
+.app {
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translate(-50%, -10%);
+}
+
+.app .mainHeading h1 {
+  text-align: center;
+}
+
+.app h1,
+h2 {
+  color: white;
+}
+
+.app .input {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.app .input {
+  margin-top: 0.8em;
+  width: 20em;
+  height: 2em;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 6px;
+  padding: 5px;
+}
+
+.app .input input {
+  width: 100%;
+  height: 1.6em;
+  border-color: transparent;
+  outline-color: transparent;
+}
+
+.app i {
+  cursor: pointer;
+  font-size: larger;
+  font-weight: 900;
+  color: grey;
+  margin-right: 5px;
+}
+.app .todos {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.app .todos .todo {
+  margin-top: 0.8em;
+  width: 20em;
+  height: 2em;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 6px;
+  padding: 5px;
+}
+.app .todos .todo .left {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.app .todos .todo .left p {
+  
+  font-size: medium;
+  font-weight: 700;
+  font-style: normal;
+  color: grey;
+}
+
+.details h3,
+h4 {
+  color: white;
+  position: initial;
+  display: flex;
+  flex-direction: row;
+}
+
+.active{
+  text-align: left;
+}
+
+.completed, .pending, .deleted{
+  margin-top: 2em;
+ background-color:#346377;
+ border-radius: 10px;
+ min-height: 200px;
+ min-width: 400px;
+ padding: 10px;
+}
+
+.statusArea{
+  display: flex;
+  font-weight: 700;
+  margin-top: 230px;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.todo{
+  display: flex;
+  justify-content: space-between;
+  color: white;
+  font-size: 1.5em;
+}
+
+.left{
+  display: flex;
+  justify-content: space-between;
+}
+
+.left > p {
+  margin-left: 10px;
+}
+
+.plusAnimate{
+  animation: identifier .1s linear 3;
+}
+
+@keyframes identifier {
+  0%{
+    transform: translateX(0)
+  }
+  100%{
+    transform: translateX(-20px);
+  }
+}
